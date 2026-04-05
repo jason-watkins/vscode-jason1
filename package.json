@@ -1,0 +1,32 @@
+{
+    "name": "jason1",
+    "displayName": "Jason1",
+    "description": "A customized Dark Modern theme",
+    "version": "0.1.0",
+    "publisher": "JasonWatkins",
+    "license": "MIT",
+    "icon": "icon.png",
+    "galleryBanner": {
+        "color": "#0A0A09",
+        "theme": "dark"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jason-watkins/vscode-jason1"
+    },
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Jason1",
+                "uiTheme": "vs-dark",
+                "path": "./themes/jason1.json"
+            }
+        ]
+    }
+}
