@@ -1,17 +1,17 @@
-name: Publish
+name: Build
 
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
   workflow_dispatch:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  publish:
-    name: Build and publish extension
+  build:
+    name: Package extension
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -24,11 +24,7 @@ jobs:
         run: npm install -g @vscode/vsce
 
       - name: Package
-        id: package
-        run: |
-          vsce package
-          VSIX=$(ls *.vsix | head -1)
-          echo "vsix-name=$VSIX" >> "$GITHUB_OUTPUT"
+        run: vsce package
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
@@ -36,8 +32,3 @@ jobs:
           name: vsix
           path: "*.vsix"
           if-no-files-found: error
-
-      - name: Publish to Marketplace
-        run: vsce publish --packagePath "${{ steps.package.outputs.vsix-name }}"
-        env:
-          VSCE_PAT: ${{ secrets.VSCE_PAT }}
