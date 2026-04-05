@@ -33,7 +33,7 @@
         "dropdown.listBackground": "#0E0E0D",
         "editor.background": "#0E0E0D",
         "editor.findMatchBackground": "#7A5510",
-        "editor.foreground": "#D4D4D4",
+        "editor.foreground": "#fbfbe7",
         "editor.inactiveSelectionBackground": "#45858880",
         "editor.selectionBackground": "#45858880",
         "editor.selectionHighlightBackground": "#113366a2",
@@ -155,7 +155,7 @@
     "semanticTokenColors": {
         "newOperator": "#EDB32D",
         "stringLiteral": "#C0C340",
-        "customLiteral": "#D4D4D4",
+        "customLiteral": "#fbfbe7",
         "numberLiteral": "#CE3C2B"
     },
     "tokenColors": [
@@ -167,7 +167,7 @@
                 "variable.legacy.builtin.python"
             ],
             "settings": {
-                "foreground": "#D4D4D4"
+                "foreground": "#fbfbe7"
             }
         },
         {
@@ -400,7 +400,7 @@
                 "source.coffee.embedded"
             ],
             "settings": {
-                "foreground": "#D4D4D4"
+                "foreground": "#fbfbe7"
             }
         },
         {
@@ -429,7 +429,7 @@
         {
             "scope": "entity.name.tag.yaml",
             "settings": {
-                "foreground": "#D4D4D4"
+                "foreground": "#fbfbe7"
             }
         },
         {

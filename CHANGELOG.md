@@ -1,6 +1,10 @@
 # Changelog
 
-## [0.1.2] - 2026-04-05
+## [0.1.4] - 2026-04-05
+
+- Fix editor UI colors
+
+## [0.1.3] - 2026-04-05
 
 - Fix version in package.json
 
