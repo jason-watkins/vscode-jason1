@@ -2,6 +2,10 @@
 
 ## [0.1.2] - 2026-04-05
 
+- Fix version in package.json
+
+## [0.1.2] - 2026-04-05
+
 - Tweak UI text colors back to neutral gray
 - Fix warning about selection transparency
 
