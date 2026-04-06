@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.1.5] - 2026-04-05
+
+- Update theme colors to harmonize to a consistent pallet
+
 ## [0.1.4] - 2026-04-05
 
 - Fix editor UI colors
